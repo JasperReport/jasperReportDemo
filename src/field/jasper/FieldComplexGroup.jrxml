@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 5.5.1  -->
+<!-- 2016-06-02T11:08:05 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ComplexFieldGroup" pageWidth="1440" pageHeight="6000" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f5bcd084-2c27-4537-97eb-6f8ebf142e03">
+	<style name="Style_blueGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#002D72" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_greyGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#53565A" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_showBox" fontName="Arial" fontSize="11">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Top_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Bottom_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Box_Ver_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<leftPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{MakeBold})]]></conditionExpression>
+			<style isBold="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="Style_balance" fontName="Arial" fontSize="11">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(($V{V_SumOfSection1_Month1}-$V{V_SumOfSection1_Month2})-$V{V_SumOfSection2})/2>1]]></conditionExpression>
+			<style backcolor="#FFC000"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(($V{V_SumOfSection1_Month1}-$V{V_SumOfSection1_Month2})-$V{V_SumOfSection2})/2<=1]]></conditionExpression>
+			<style backcolor="#92D050"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="CSV">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Period_Concat" class="java.lang.String"/>
+	<field name="NodeDesc" class="java.lang.String"/>
+	<field name="SortOrder" class="java.lang.Double"/>
+	<field name="IndentPos" class="java.lang.Integer"/>
+	<field name="MakeBold" class="java.lang.String"/>
+	<field name="Show_Top_Line" class="java.lang.String"/>
+	<field name="Show_Bottom_Line" class="java.lang.String"/>
+	<field name="Show_Box_Ver_Line" class="java.lang.String"/>
+	<field name="Mon2_Balance" class="java.lang.Double"/>
+	<field name="Mon1_Balance" class="java.lang.Double"/>
+	<field name="Mon3_Balance" class="java.lang.Double"/>
+	<field name="Section" class="java.lang.String"/>
+	<field name="Sub_Header" class="java.lang.String"/>
+	<field name="SubHeader_SortOrder" class="java.lang.Integer"/>
+	<sortField name="SubHeader_SortOrder"/>
+	<sortField name="Section"/>
+	<sortField name="SortOrder"/>
+	<variable name="V_Show_Top_Line" class="java.lang.String" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{Show_Top_Line}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Show_Top_Line}]]></initialValueExpression>
+	</variable>
+	<variable name="V_Show_Bottom_Line" class="java.lang.String" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{Show_Bottom_Line}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Show_Bottom_Line}]]></initialValueExpression>
+	</variable>
+	<variable name="V_Show_Box_Ver_Line" class="java.lang.String" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{Show_Box_Ver_Line}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Show_Box_Ver_Line}]]></initialValueExpression>
+	</variable>
+	<variable name="V_GroupHeader" class="java.lang.String" resetType="None" incrementType="Group" incrementGroup="G_GroupHeader">
+		<variableExpression><![CDATA[$F{Sub_Header}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Sub_Header}]]></initialValueExpression>
+	</variable>
+	<variable name="V_Pc0" class="java.lang.String">
+		<variableExpression><![CDATA[($F{Period_Concat}).split("\\|")[0]]]></variableExpression>
+		<initialValueExpression><![CDATA[($F{Period_Concat}).split("\\|")[0]]]></initialValueExpression>
+	</variable>
+	<variable name="V_Pc1" class="java.lang.String">
+		<variableExpression><![CDATA[($F{Period_Concat}).split("\\|")[1]]]></variableExpression>
+		<initialValueExpression><![CDATA[($F{Period_Concat}).split("\\|")[1]]]></initialValueExpression>
+	</variable>
+	<variable name="V_Pc2" class="java.lang.String">
+		<variableExpression><![CDATA[($F{Period_Concat}).split("\\|")[2]]]></variableExpression>
+		<initialValueExpression><![CDATA[($F{Period_Concat}).split("\\|")[2]]]></initialValueExpression>
+	</variable>
+	<variable name="V_desc" class="java.lang.String" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{NodeDesc}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{NodeDesc}]]></initialValueExpression>
+	</variable>
+	<variable name="V_IndentPos" class="java.lang.Integer" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{IndentPos}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{IndentPos}]]></initialValueExpression>
+	</variable>
+	<variable name="V_Column1" class="java.lang.Double" resetType="Group" resetGroup="Group3" calculation="Sum">
+		<variableExpression><![CDATA[$F{Mon3_Balance}]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_Column2" class="java.lang.Double" resetType="Group" resetGroup="Group3" calculation="Sum">
+		<variableExpression><![CDATA[$F{Mon2_Balance}]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_Column3" class="java.lang.Double" resetType="Group" resetGroup="Group3" calculation="Sum">
+		<variableExpression><![CDATA[$F{Mon1_Balance}]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_section" class="java.lang.String" resetType="Group" resetGroup="G_GroupH_and_SectionOrder">
+		<variableExpression><![CDATA[$F{Section}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{Section}]]></initialValueExpression>
+	</variable>
+	<variable name="V_SumOfSection1_Month1" class="java.lang.Double" resetType="Group" resetGroup="G_GroupHeader" calculation="Sum">
+		<variableExpression><![CDATA["Section_1".equals($F{Section})?$F{Mon1_Balance}:0]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_SumOfSection1_Month2" class="java.lang.Double" resetType="Group" resetGroup="G_GroupHeader" calculation="Sum">
+		<variableExpression><![CDATA["Section_1".equals($F{Section})?$F{Mon2_Balance}:0]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_SumOfSection2" class="java.lang.Double" resetType="Group" resetGroup="G_GroupHeader" calculation="Sum">
+		<variableExpression><![CDATA["Section_2".equals($F{Section})?$F{Mon1_Balance}:0]]></variableExpression>
+		<initialValueExpression><![CDATA[0.0]]></initialValueExpression>
+	</variable>
+	<variable name="V_SubHeaderSortOrder" class="java.lang.Integer" incrementType="Group" incrementGroup="G_SubHeader_SortOrder">
+		<variableExpression><![CDATA[$F{SubHeader_SortOrder}]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{SubHeader_SortOrder}]]></initialValueExpression>
+	</variable>
+	<group name="G_SubHeader_SortOrder">
+		<groupExpression><![CDATA[$F{SubHeader_SortOrder}]]></groupExpression>
+	</group>
+	<group name="G_GroupHeader">
+		<groupExpression><![CDATA[$F{Sub_Header}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				<textField>
+					<reportElement x="0" y="0" width="1400" height="20" uuid="f3bb462d-9791-49df-b900-3de80edd160d">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$V{V_SubHeaderSortOrder}<6]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="14" isBold="true" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{V_GroupHeader}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="60">
+				<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				<frame>
+					<reportElement x="0" y="0" width="980" height="20" uuid="c184bd14-a738-457f-a796-04246fc090ce">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textField>
+						<reportElement x="0" y="0" width="400" height="20" uuid="68108c2f-5d6a-40b6-893b-a2ecbb9ef5e7">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<textElement verticalAlignment="Bottom">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Balance"]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)">
+						<reportElement style="Style_balance" mode="Opaque" x="860" y="0" width="120" height="20" uuid="fd0df6d0-601d-4ec9-b501-e93bc934c6b6">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<box>
+							<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+							<paragraph rightIndent="4"/>
+						</textElement>
+						<textFieldExpression><![CDATA[(($V{V_SumOfSection1_Month1}-$V{V_SumOfSection1_Month2})-$V{V_SumOfSection2})/2]]></textFieldExpression>
+					</textField>
+				</frame>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="G_GroupH_and_SectionOrder">
+		<groupExpression><![CDATA[$F{Sub_Header}+$F{Section}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField>
+					<reportElement x="1000" y="0" width="400" height="20" uuid="bb57dbc6-934f-44ce-b017-3babf848e97e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Notes"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" mode="Opaque" x="500" y="0" width="120" height="20" uuid="6f972e4a-daca-4d08-bea4-fac03bb05c21">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Pc2})).replace("-", " ")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" x="620" y="0" width="120" height="20" uuid="439b8f12-1e5c-4ac7-a0c3-2e722dad38b8">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Pc1})).replace("-", " ")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" x="740" y="0" width="120" height="20" uuid="55dcf8c2-db00-40c2-828a-9ea523ea61a7">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Pc0})).replace("-", " ")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_greyGroundColor" x="860" y="0" width="120" height="20" uuid="a8beb7fe-8f87-4abe-a8c2-63d23dc72dc0">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA["I/(d)"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" x="500" y="0" width="240" height="20" backcolor="#FFFFFF" uuid="8ae8869b-e6db-4f6c-8863-dd7a21cd41c6">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_2".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" x="740" y="0" width="120" height="20" uuid="694d5431-218d-4b1c-90d2-f3d564f69902">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_2".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Pc1})).replace("-", " ")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Style_blueGroundColor" x="860" y="0" width="120" height="20" uuid="d88ce453-0814-4ae5-9a20-4eaeba257db5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_2".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Pc0})).replace("-", " ")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="500" height="20" uuid="6fb1e5b4-f7ee-4cf8-8a55-f2d59b2fea82">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20"/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{Sub_Header}+$F{Section}+$F{NodeDesc}]]></groupExpression>
+		<groupFooter>
+			<band height="20">
+				<textField>
+					<reportElement style="Style_showBox" x="0" y="0" width="500" height="20" uuid="dde3577a-88b5-4fa1-8b26-6c74356c64b9">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA["".format("%"+($V{V_IndentPos}*2-5)+"s", " ")+$V{V_desc}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement x="500" y="0" width="500" height="20" uuid="3142a380-58c5-4d82-ab67-0c774baf6b31">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_1".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="0" y="0" width="120" height="20" uuid="f2244260-c5d2-4416-91f1-02e6df2c3f60">
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+($V{V_Column1}==null?0:$V{V_Column1})]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="120" y="0" width="120" height="20" uuid="2b8e5496-7698-4946-bde3-508f8e5bbdcf">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+($V{V_Column2}==null?0:$V{V_Column2})]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="240" y="0" width="120" height="20" uuid="f21de036-8680-4230-8c85-899ba6b2b2aa">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+($V{V_Column3}==null?0:$V{V_Column3})]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="360" y="0" width="120" height="20" uuid="cd33542d-409f-46d6-9ebb-61f9cd1ee99f">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+(($V{V_Column3}==null&&$V{V_Column2}==null)?0:($V{V_Column3}-$V{V_Column2}))]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="500" y="0" width="500" height="20" uuid="375d2ff1-a04e-410f-b6de-e523194fe1e4">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA["Section_2".equals($V{V_section})]]></printWhenExpression>
+					</reportElement>
+					<textField>
+						<reportElement style="Style_showBox" x="0" y="0" width="240" height="20" uuid="6a8f3407-1a16-44f1-8b75-90628fd8a4cb">
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA[""]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="240" y="0" width="120" height="20" uuid="d9c681c3-c96f-4009-821a-229165247b19">
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+($V{V_Column2}==null?0:$V{V_Column2})]]></textFieldExpression>
+					</textField>
+					<textField pattern="#,##0;(#,##0)" isBlankWhenNull="false">
+						<reportElement style="Style_showBox" x="360" y="0" width="120" height="20" uuid="3f297602-5d57-4a9c-828e-7317c22e03f3">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						</reportElement>
+						<box rightPadding="4"/>
+						<textElement textAlignment="Right" verticalAlignment="Middle">
+							<font fontName="Arial" size="11"/>
+						</textElement>
+						<textFieldExpression><![CDATA["".equals($V{V_desc})||$V{V_desc}==null?"":
+($V{V_Column3}==null?0:$V{V_Column3})]]></textFieldExpression>
+					</textField>
+				</frame>
+				<textField>
+					<reportElement x="1000" y="0" width="400" height="20" uuid="39fb7869-86d1-4b4e-90b7-c84605b8efd5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.5" lineStyle="Dashed" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Dashed" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement x="0" y="0" width="1400" height="20" uuid="df466fb8-9241-47e3-9a23-87b70851cda6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="2.0"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Stockholders Equity Detail"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

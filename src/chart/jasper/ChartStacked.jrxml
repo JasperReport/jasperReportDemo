@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-04-25T13:37:17 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stackedChart" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="37b3f54f-4dce-4943-9437-ed432f91907f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="char_stacked"/>
+	<queryString language="CSV">
+		<![CDATA[]]>
+	</queryString>
+	<field name="month" class="java.lang.String"/>
+	<field name="riskstyle" class="java.lang.String"/>
+	<field name="dataValue" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="216" splitType="Stretch">
+			<stackedBarChart>
+				<chart evaluationTime="Report">
+					<reportElement x="20" y="16" width="510" height="200" uuid="65cef0df-8019-4c8b-9c00-46c9bf5e8350"/>
+					<chartTitle>
+						<titleExpression><![CDATA["STACKET BAR DEMO"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend position="Top"/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{riskstyle}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{month}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{dataValue}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#FF9966"/>
+						<seriesColor seriesOrder="1" color="#CA85AF"/>
+						<seriesColor seriesOrder="2" color="#339966"/>
+					</plot>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+		</band>
+	</summary>
+</jasperReport>

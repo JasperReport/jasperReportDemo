@@ -1,0 +1,19 @@
+CASE_DATE,DESCRIPTION,RISK,VALUE
+2014-10,Accommodation Acount,High Risk,0
+2014-10,Accommodation Acount,Low Risk,0
+2014-10,Accommodation Acount,Average Risk,990
+2014-10,Consumer Group,Low Risk,0
+2014-10,Consumer Group,High Risk,0
+2014-10,Consumer Group,Average Risk,990
+2014-10,Corporate,Average Risk,990
+2014-10,Corporate,Low Risk,0
+2014-10,Corporate,High Risk,0
+2014-11,Accommodation Acount,Low Risk,0
+2014-11,Accommodation Acount,Average Risk,0
+2014-11,Accommodation Acount,High Risk,100
+2014-11,Consumer Group,Average Risk,0
+2014-11,Consumer Group,High Risk,100
+2014-11,Consumer Group,Low Risk,0
+2014-11,Corporate,High Risk,100
+2014-11,Corporate,Average Risk,0
+2014-11,Corporate,Low Risk,0

@@ -1,0 +1,168 @@
+Period_Concat,Group_Header,Sub_Header,SubHeader_SortOrder,NodeDesc,SortOrder,MakeBold,IndentPos,Show_Top_Line,Show_Bottom_Line,Show_Box_Ver_Line,Section,Mon1_Balance,Mon2_Balance,Mon3_Balance
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,311001 - Preferred Stock (L3),1,Y,1,Y,Y,Y,Section_1,13968012404,13968012404,13968012404
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,320000 - Common Stock (L3),3,Y,1,Y,Y,Y,Section_1,30994752,30994744,30994744
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,331100 - Additional Paid-In Capital (APIC) (L4),7,Y,1,Y,Y,Y,Section_1,1.09E+11,1.09E+11,1.09E+11
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Unearned Compensation,3,332100 - Unearned Compensation (L4),11,Y,1,Y,Y,Y,Section_1,-781266508,-814359919,-814359919
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,340000 - Retained Earnings (L3),19,Y,1,Y,Y,Y,Section_1,1.28E+11,1.27E+11,1.27E+11
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,350000 - Treasury Stock (L3),15,Y,1,Y,Y,Y,Section_1,-5123460950,-4628426149,-4628426149
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,361120 - FAS 133 - Net Investment Hedge - Pre-Tax (L5),33,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,361125 - FAS 133 - Net Investment Hedge - Tax (L5),35,Y,1,N,Y,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361140 - Other Comprehensive Income (OCI) Pension Pre-Tax (L5),47,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361145 - MIN Pension Tax (L5),48,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,361150 - FAS 133 - Cash Flow Hedge - Pre-Tax (L5),61,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,361155 - FAS 133 - Cash Flow Hedge - Tax (L5),63,Y,1,N,Y,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361160 - Other Comprehensive Income (OCI) Post Retirement Pre-Tax (L5),49,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361165 - Other Comprehensive Income (OCI) U.S. Non-Qualified Pension Pre-Tax (L5),51,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361170 - Other Comprehensive Income (OCI) US Post-Employment Pension Pre-Tax (L5),53,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361180 - Other Comprehensive Income (OCI) Profit Sharing Plan Pre-Tax (L5),55,Y,1,N,Y,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,361200 - Currency Translation Adjustment - Net Tax (L4),23,Y,1,Y,Y,Y,Section_1,-15442762855,-13775460908,-13775460908
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,361300 - FAS 133 - Net Investment Hedge - Net Tax (L4),37,Y,1,Y,Y,Y,Section_1,-5039470709,-5639067157,-5639067157
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,361400 - FAS 115 Equity - Available-for-Sale (AFS) - Net Tax (L4),41,Y,1,Y,Y,Y,Section_1,288343249.2,86930170.7,86930170.7
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,361500 - FAS 115 Equity - Held-to-Maturity (HTM) - Net Tax (L4),43,Y,1,Y,Y,Y,Section_1,-375715142,-374542329,-374542329
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,361600 - Other Comprehensive Income (OCI) Benefit Plans - Net Tax (L4),57,Y,1,Y,Y,Y,Section_1,-4612507334,-4670787604,-4670787604
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,361700 - FAS 133 - Cash Flow Hedge - Net Tax (L4),65,Y,1,Y,Y,Y,Section_1,-705226956,-730978267.3,-730978267.3
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_5,11,361800 - Fair Value Option - Debt Valuation Adjustment (FVO DVA) - Net Tax (L4),73,Y,1,Y,Y,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_5,11,361810 - Fair Value Option - Debt Valuation Adjustment (FVO DVA) - Pre-Tax (L5),69,Y,1,N,N,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_5,11,361820 - Fair Value Option - Debt Valuation Adjustment (FVO DVA) - Tax (L5),71,Y,1,N,Y,Y,Section_1,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,965010 - Adjustment to Preferred & Common Stock (L2),5,Y,1,Y,Y,Y,Section_2,-173897236,-290832207.7,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,965020 - Adjustment to Treasury Stock (L2),17,Y,1,Y,Y,Y,Section_2,-495034801,-747172343,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,965031 - Adjustment to Additional Paid-In Capital (APIC) (L3),9,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Unearned Compensation,3,965032 - Adjustment to Unearned Compensation (L3),13,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,965040 - Adjustment to Retained Earnings (L2),21,Y,1,Y,Y,Y,Section_2,-324333058.1,-524899.797,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,965051 - bank Head Office Translation Adjustments (L3),25,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,965052 - Below the Line Translation Adjustment - Pre-Tax (L3),27,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,965053 - Below the Line Translation Adjustment - Tax (L3),29,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,965054 - Other Cumulative Translation Adjustment (CTA) (L3),31,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,965055 - Changes in OCI Equity Adjustment on AFS/HTM Securities (L3),45,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,965056 - Changes in OCI - Net Investment Hedges (L3),39,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,965057 - Changes in OCI - Cash Flow Hedges (L3),67,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,965058 - Changes in OCI - Minimum Pension Liabilities (L3),59,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_5,11,965059 - Changes in OCI - Fair Value Option - Debt Valuation Adjustment (FVO DVA)(L3),75,Y,1,Y,Y,Y,Section_2,,,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_5,11,,73.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,,67.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,,65.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,,59.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,,57.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,,45.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,,43.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,,39.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,,37.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,,31.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,,23.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,,21.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,,19.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,,17.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,,15.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Unearned Compensation,3,,13.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Unearned Compensation,3,,11.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,,9.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,,7.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,,5.1,N,1,N,N,N,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,,3.1,N,1,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,,1.1,N,1,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,BS51010000-Permanent Preferred Stock,0,N,5,N,N,Y,Section_1,13968012404,13968012404,13968012404
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,BS51020000-Permanent Preferred Stock - Lower Tier Subsidiary,0,N,5,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,BS52000000-Common Stock,2,N,5,N,N,Y,Section_1,30994752,30994744,30994799
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54000000-Paid In Surplus,6,N,5,N,N,Y,Section_1,1.08E+11,1.08E+11,1.08E+11
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54010100-APIC - Contra Additional Paid-In Capital Forfeiture Provision (FAS123R),6,N,5,N,N,Y,Section_1,577556964,566543762,551770938
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54010200-Apic - Directors Stock Award,6,N,5,N,N,Y,Section_1,13628059,15169998,15169998
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54080000-Apic Stock Option Amortization,6,N,5,N,N,Y,Section_1,21557351,21557351,21557351
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54110000-APIC Stock Option Capital Chargeback,6,N,5,N,N,Y,Section_1,-4738746094,-4738247421,-4738189965
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54160000-Apic Stock Option - Tax,6,N,5,N,N,Y,Section_1,35614234,35614234,35614234
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS54190000-APIC Stock Option - Parent Pickup,6,N,5,N,N,Y,Section_1,5243980193,5242099476,5242591078
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS58000000-Other Capital Reserves,6,N,5,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS60000000-Undivided Profits,18,N,5,N,N,Y,Section_1,1.28E+11,1.27E+11,1.25E+11
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS60010000-Capital Write-Up,6,N,5,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income,6,BS60060000-Equity Adjustment Due to Foreign Currency Translation - group,22,N,5,N,N,Y,Section_1,-15442762855,-13775460908,-13575976692
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Additional Paid In Capital,2,BS61000000-Subsidiary Compulsory - Legal Reserves,6,N,5,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61400000-Retained Earnings - Unvested Stock Award Dividend - Pre-Tax,18,N,5,N,N,Y,Section_1,-330042668,-330153360,-330319653
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61420000-Retained Earnings - Unvested Stock Award Dividend - Federal Tax Effect,18,N,5,N,N,Y,Section_1,47297759.95,47400932.2,47024687.1
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61420100-Retained Earnings - Unvested Stock Award Dividend - NY State & Local Tax Effect,18,N,5,N,N,Y,Section_1,11976,11976,11976
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61420200-Retained Earning - Unvested Stock Award Dividend -Other State & Local Tax Effect,18,N,5,N,N,Y,Section_1,6140124,6145861,7266357
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61420300-Retained Earnings - Unvested Stock Award Dividend - Foreign Tax Effect,18,N,5,N,N,Y,Section_1,11152385,11291388,11238332
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,BS61500000-Adjustment to Open Retained Earnings - Other Pre-Tax,18,N,5,N,N,Y,Section_1,0,0,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62060000-Stockholders Equity OCI MTM AFS Securities,40,N,5,N,N,Y,Section_1,834253688,352043584.4,1355516096
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62090000-Minority Interest Equity Adjustments for MTM-AFS,40,N,5,N,N,Y,Section_1,15086111,15879679,13740810
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62100000-Equity Adjustment Due to Hedge Gains on Available-for-Sale Securities,40,N,5,N,N,Y,Section_1,34221159,68989797,23651742
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62200000-Equity Adjustment Due to Hedge Losses on Available-for-Sale Securities,40,N,5,N,N,Y,Section_1,-441658767,-330055054,-472111512
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62300000-Equity Adjustment Due to Domestic Federal Taxes on MTM of AFS Securities,40,N,5,N,N,Y,Section_1,-131186029.8,-24825205.3,-256502279.4
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62310000-Equity Adjustmt Due to Domestic State & Local Taxes on MTM of AFS Securities,40,N,5,N,N,Y,Section_1,-26360667,-13299680,-45735928
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62320000-Equity Adjustment Due to Foreign Income Taxes on MTM of AFS Securities,40,N,5,N,N,Y,Section_1,-6889391,7857105,-35341405.53
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62340000-HTM OCI Equity Pre-tax,42,N,5,N,N,Y,Section_1,-587462050,-585338888,-587312198
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62350000-HTM OCI Equity Federal tax,42,N,5,N,N,Y,Section_1,161618344,160391805,163311847
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62360000-Held-to-Maturity Other Comprehensive Income Equity State and Local Tax,42,N,5,N,N,Y,Section_1,31744012,31616878,25043697
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62370000-HTM OCI Equity Foreign tax,42,N,5,N,N,Y,Section_1,18384552,18787876,18639233
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62400000-Eqty Adjustmt Due to MTM of AFS Investmt Secs Held by Eqty Method Affiliates,40,N,5,N,N,Y,Section_1,49035635,49036951,49037989
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62410000-Eq Adjustmt Due to Inc Tax on MTM of AFS Investmt Sec Held by Eq Method Afiliate,40,N,5,N,N,Y,Section_1,-9596371,-9596371,-9596371
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_2,8,BS62600000-Equity Adjustment Due to AFS Securities Other Parent Company Consolidation,40,N,5,N,N,Y,Section_1,-28562118,-29100635.35,-28491221.59
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,BS63000000-Treasury Stock,14,N,5,N,N,Y,Section_1,-5123460950,-4628426149,-3881253805
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS64600000-MTM G/L on Derv OCI CF Hdg Effective Portion-All LwTier Subs ExLeg5 170&171,64,N,5,N,N,Y,Section_1,-1018924979,-1071422281,-1118715492
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS64610000-FedTx Eff of MTM G/L on Derv OCI CF Hdg-All Low Tier subs exc Leg 5 170 & 171,64,N,5,N,N,Y,Section_1,323669712,340935403.8,379028947.3
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS64620000-MTM G/L on Derv OCI CF Hdg of Antcpatd Transctn-All LwTier Subs ExLeg5 170&171,64,N,5,N,N,Y,Section_1,-19362561,-20854221,-22325860
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS64630000-FedTx Eff of MTM G/L on Der OCI CF Hdg of Antcptd Transctn-LwTier exLeg5 170&171,64,N,5,N,N,Y,Section_1,-23532000,-21445000,-21698000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS64640000-MTM G/L on Hdg Instr OCI Cap Hdg Eff Portn-All LwTier Subs ex Leg5 170&171,36,N,5,N,N,Y,Section_1,-8053371285,-8916013263,-9034572737
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS64650000-FedTx Eff of MTM G/L on Hdg Instr OCI Cap Hdg-All LwTier Subs ExLeg5 170&171,36,N,5,N,N,Y,Section_1,2549357510,2751186618,2790729318
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS64840000-MTM G/L on Hdg Instr Oth Compre Inc CpHdg Eff Portn-CG BkHldg Leg 170&171,36,N,5,N,N,Y,Section_1,205538069,163253009,219276971
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS64850000-FedTx Eff of MTM G/L on Hdg Instr OCI Cap Hdg-CG BkHldg Co Leg170&171,36,N,5,N,N,Y,Section_1,-65755171,23960541,8622774
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65000000-Equity Adjustment on Cash Flow Hedge - Other Parent Consolidations,64,N,5,N,N,Y,Section_1,-72371204,-72371208,-72371208
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65100000-NY St&Cty Tx Eff of MTM G/L on Derv OCI CF Hdg-All LwTier Subs exLeg5 170&171,64,N,5,N,N,Y,Section_1,-326809,-326809,-326809
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65110000-Oth St Tx Eff of MTM G/L on Derv OCI CF Hdg-All LwTier Subs ex Leg5 170&171,64,N,5,N,N,Y,Section_1,56679603,59004603,40612603
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65120000-Frgn Tx Eff of MTM G/L on Derv OCI CF Hdg-All LwTier subs ex Leg5 170 & 171,64,N,5,N,N,Y,Section_1,4932424,5373491,5506167
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65130000-NY St&Cty TxEff of MTM G/L on Der OCI CF Hdg of Antcptd Transctn-exLeg5 170&171,64,N,5,N,N,Y,Section_1,63000,63000,63000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65140000-Oth St TxEff of MTM G/L on Derv OCI CF Hdg of Antcptd Transctn-exLeg5 170&171,64,N,5,N,N,Y,Section_1,13887616,21591215,993000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_4,10,BS65150000-Fgn TxEff of MTM G/L on Der OCI CF Hdg of Antcptd Transctn-LwTier exLeg5 170&171,64,N,5,N,N,Y,Section_1,30058242,28473539,29136543
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS65160000-NY St&Cty TxEff of MTM G/L on Hdg Instr OCI CpHdg-All LwTier Subs exLeg5 170&171,36,N,5,N,N,Y,Section_1,24591389,25104329,25034121
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS65170000-Ot St TxEff of MTM G/L on Hdg Instr OCI CpHdg-All LwTier Subs exLeg5 170&171,36,N,5,N,N,Y,Section_1,265902000,266505000,265106000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS65180000-FgnTx Eff of MTM G/L on Hdg Instr OCI CpHdg-All LwTier Subs exLeg5 170&171,36,N,5,N,N,Y,Section_1,122372404,135042234,131480009
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_1,7,BS66000000-Equity Adjustment on Capital Hedges - Other Parent Consolidations,36,N,5,N,N,Y,Section_1,-88105625,-88105625,-88105626
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67000000-SFAS 158 Prior Service Cost Pension Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,10482671,11108431.14,12288978
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67020000-SFAS 158 Prior Service Cost Equity Adjustment - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,-43582498,-44955843.65,-46186906
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67030000-SFAS 158 Prior Service Cost Equity Adjustment - U.S. Federal Tax Effect,56,N,5,N,N,Y,Section_1,-859522,-1145175,4228799
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67050000-SFAS 158 Prior Service Cost Equity Adjustment - Other State Tax Effect,56,N,5,N,N,Y,Section_1,-1275983,-1305508,417646
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67060000-SFAS 158 Prior Service Cost Non-Qualified Pension Plan Equity Adjustment-Pre-tax,56,N,5,N,N,Y,Section_1,-1962333,-2315000,-2668665
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67080000-SFAS 158 Prior Service Cost Postretirement Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,125231375,129284745.4,132649687
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67100000-SFAS 158 Net Gain/(Loss) Pension Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,-6877886144,-6957050682,-7556021334
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67120000-SFAS 158 Net Gain/(Loss) Equity Adjustment - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,556698248,577214850.4,600042403
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67130000-SFAS 158 Net Gain/(Loss) Equity Adjustment - U.S. Federal Tax Effect,56,N,5,N,N,Y,Section_1,1915343317,1919663058,2218152740
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67140000-SFAS 158 Net Gain/(Loss) Equity Adjustment - NY State and City Tax Effect,56,N,5,N,N,Y,Section_1,-2838000,-2838000,-2838000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67150000-SFAS 158 Net Gain/(Loss) Equity Adjustment - Other State Tax Effect,56,N,5,N,N,Y,Section_1,376449323,376988367,280542626
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67160000-SFAS 158 Prior Service Cost Postemployment Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,97666001,100236001,102806001
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67180000-SFAS 158 Net Gain/(Loss) Non-Qualified Pension Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,-272942668,-273604001,-331295000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67200000-SFAS 158 Transition Obligation Pension Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,589720,385622,221129
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67220000-SFAS 158 Transition Obligation Equity Adjustment - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,-1109016,-1049172.53,-989855
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67260000-SFAS 158 Net Gain/(Loss) Postretirement Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,-565129362,-582558736.9,-695227955
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67280000-SFAS 158 Net Gain/(Loss) Postemployment Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,-85163666,-86122000,-87080333
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67300000-SFAS 158 Funded Status Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,2508325,2542209,2581194
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67320000-SFAS 158 Funded Status Equity Adjustment - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,-440449,-452932,-474368
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67360000-SFAS 158 Transition Obligation Postretirement Plan Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,-252426,-260801.57,-268065
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67380000-OCI Profit Sharing on Benefit Plans SFAS 158 - Pre-tax,56,N,5,N,N,Y,Section_1,94044632,96750550,105240179
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67390000-OCI Profit Sharing on Benefit Plans - Pre-tax Parent Pickup,56,N,5,N,N,Y,Section_1,-679029,-695990,-709741
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67400000-OCI Profit Sharing on FAS 115 AFS Securities - Pre-tax,56,N,5,N,N,Y,Section_1,2306635,1541802,1212682
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67420000-OCI Profit Sharing on FAS 133 Cash Flow Hedges - Pre-tax,56,N,5,N,N,Y,Section_1,1644141,1791164,1835389
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67440000-OCI Profit Sharing on Benefit Plans - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,-28213390,-29025165,-31572054
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS67450000-OCI Profit Sharing Plans - US Federal Tax Effect,56,N,5,N,N,Y,Section_1,-2057661.5,-2430557.35,-3148120.1
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Unearned Compensation,3,BS69600000-Unearned Compensation,10,N,5,N,N,Y,Section_1,-781266508,-814359919,-846830585
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69700000-SFAS 158 Pension/Postretirement Equity Adjustment - Pre-tax,56,N,5,N,N,Y,Section_1,684092,129145,0
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69710000-SFAS 158 Pension/Postretirement Equity Adjustment - Parent Pickup,56,N,5,N,N,Y,Section_1,-43826150,-40460805.81,-44668657
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69750000-SFAS 158 Pension/Postretirement Equity Adjustment - Foreign Tax Effect,56,N,5,N,N,Y,Section_1,22089842,22362748,22293434
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69760000-SFAS 158 Pension/Postretirement Equity Adjustment - US Fed Tax Effect,56,N,5,N,N,Y,Section_1,109972641.7,115484073.9,94365439.1
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69770000-SFAS158 Pension/Postretirement Equity Adjustment-NY State & City Tax Effect,56,N,5,N,N,Y,Section_1,2838000,2838000,2838000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Other Comprehensive Income_3,9,BS69780000-SFAS 158 Pension/Postretirement Equity Adjustment - Other State Tax Effect,56,N,5,N,N,Y,Section_1,-2838000,-2838000,-2838000
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,IS04801000-Sale of Stock at Par,4,N,5,N,N,Y,Section_2,8,-55,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Treasury Stock,4,IS04804000-Changes To Treasury Stock,16,N,5,N,N,Y,Section_2,-495034801,-747172343,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS04824000-Changes to Retained Earnings - Unvested Stock Award Dividend - Pre-Tax,20,N,5,N,N,Y,Section_2,-239781,84695,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS04824020-Changes to Retained Earnings - Unvested Stock Award Dividend - Total Tax Effect,20,N,5,N,N,Y,Section_2,-64580.05,-741441.8,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS04824500-Prt Pick Up Charge R/E Unvested Stock Award Dividend,20,N,5,N,N,Y,Section_2,167144,131847,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05700000-Provision for Dividends/Branch Remittances,20,N,5,N,N,Y,Section_2,-324195189,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05702500-Dividend - Foreign Option Chargeback - Parent Pick Up,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05705000-Provision for Dividends/Branch Remittances Foreign Options,20,N,5,N,N,Y,Section_2,-652,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,IS05707000-Other Deductions from Capital Stock,4,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05724000-Other Deductions to Retained Earnings - Unvested Stock Award dividend,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05725000-Unvested Stock Award - Tax - Other Change,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05730000-Adjustment to Opening Retained Earnings - Other Pre-tax,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS05790000-Minority-Interest Other Capital Additions and Deductions,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,IS29502050-Capitalization of Earnings Stock,4,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,IS29901000-Equity Adjustment Revaluation of Capital Stock,4,N,5,N,N,Y,Section_2,-136593989,3820965.108,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS29914000-Equity Adjustment of R/E-Unvested Stock Award Dividend - Pre-Tax,20,N,5,N,N,Y,Section_2,0,0.003,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Retained Earnings,5,IS29914020-Equity Adjustment of R/E-Unvested Stock Award Dividend-Tax Effect,20,N,5,N,N,Y,Section_2,0,0,
+2015-7|2015-6|2015-5,groups Stockholders Equity Detail,Common and Preferred Stock,1,IS29940000-Equity Adjustment Revaluation of All Other Capital Accounts,4,N,5,N,N,Y,Section_2,-37303255,-294653117.8,

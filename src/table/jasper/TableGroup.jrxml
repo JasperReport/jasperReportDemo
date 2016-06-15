@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 5.5.1  -->
+<!-- 2016-06-15T09:33:29 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Part1" pageWidth="2940" pageHeight="2500" orientation="Landscape" columnWidth="500" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a97f6cbd-f8e2-4cd1-a950-523d3abf491c">
+	<style name="Table_CH" mode="Opaque" forecolor="#FFFFFF" backcolor="#002D72" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_blueGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#002D72" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_blueBoldGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#002D72" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11" isBold="true">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_greyGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#53565A" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_greyBoldGroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#53565A" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11" isBold="true">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_Q_GroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#00BDF2" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_Year_GroundColor" mode="Opaque" forecolor="#FFFFFF" backcolor="#008CE6" hAlign="Center" vAlign="Middle" fontName="Arial" fontSize="11">
+		<box>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Style_showBox" fontName="Arial" fontSize="11">
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Top_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Bottom_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{Show_Box_Ver_Line})]]></conditionExpression>
+			<style>
+				<box>
+					<leftPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA["Y".equals($F{MakeBold})]]></conditionExpression>
+			<style isBold="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="Style_Amount" style="Style_showBox" mode="Opaque" forecolor="#000000" backcolor="#FFFFFF" hAlign="Right" vAlign="Middle" pattern="#,##0;(#,##0)" fontName="Arial" fontSize="11">
+		<box rightPadding="4"/>
+	</style>
+	<style name="Style_NodeDesc" style="Style_showBox" mode="Opaque" forecolor="#000000" backcolor="#FFFFFF" hAlign="Left" vAlign="Middle" fontName="Arial" fontSize="11"/>
+	<subDataset name="Dataset1" uuid="8356b038-43fd-4b2b-a215-9719277dbd76">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CSAR12_Part1"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="PERIOD_CONCAT_VALUE" class="java.lang.String"/>
+		<field name="NodeDesc" class="java.lang.String"/>
+		<field name="SortOrder" class="java.lang.Double"/>
+		<field name="MakeBold" class="java.lang.String"/>
+		<field name="IndentPos" class="java.lang.Integer"/>
+		<field name="Show_Top_Line" class="java.lang.String"/>
+		<field name="Show_Bottom_Line" class="java.lang.String"/>
+		<field name="Show_Box_Ver_Line" class="java.lang.String"/>
+		<field name="P_Show_MTD" class="java.lang.String"/>
+		<field name="P_Show_QTD" class="java.lang.String"/>
+		<field name="P_Show_YTD" class="java.lang.String"/>
+		<field name="Show_MTD_Per" class="java.lang.String"/>
+		<field name="Show_QTD_Per" class="java.lang.String"/>
+		<field name="P_VAR_THRES" class="java.lang.String"/>
+		<field name="P_AND_OR" class="java.lang.String"/>
+		<field name="P_VAR_PER_THRES" class="java.lang.String"/>
+		<field name="MTD_Amt1" class="java.lang.Double"/>
+		<field name="MTD_Amt2" class="java.lang.Double"/>
+		<field name="MTD_Amt3" class="java.lang.Double"/>
+		<field name="MTD_Amt4" class="java.lang.Double"/>
+		<field name="MTD_Amt5" class="java.lang.Double"/>
+		<field name="MTD_Amt6" class="java.lang.Double"/>
+		<field name="MTD_Amt_Mpy" class="java.lang.Double"/>
+		<field name="QTD_Amt1" class="java.lang.Double"/>
+		<field name="QTD_Amt2" class="java.lang.Double"/>
+		<field name="QTD_Amt3" class="java.lang.Double"/>
+		<field name="QTD_Amt4" class="java.lang.Double"/>
+		<field name="QTD_Amt5" class="java.lang.Double"/>
+		<field name="YTD_AmtPY" class="java.lang.Double"/>
+		<field name="YTD_AmtCY" class="java.lang.Double"/>
+		<field name="Pr_MTD_Dol" class="java.lang.Double"/>
+		<field name="Pr_QTD_Dol" class="java.lang.Double"/>
+		<field name="Same_MTD_Pr_Yr_Dol" class="java.lang.Double"/>
+		<field name="Same_QTD_Pr_Yr_Dol" class="java.lang.Double"/>
+		<field name="Pr_MTD_Per" class="java.lang.Double"/>
+		<field name="Pr_QTD_Per" class="java.lang.Double"/>
+		<field name="Finance_Presentation" class="java.lang.String"/>
+		<sortField name="SortOrder"/>
+		<variable name="V_Header0" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[0]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[0]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header1" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[1]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[1]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header2" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[2]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[2]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header3" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[3]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[3]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header4" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[4]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[4]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header5" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[5]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[5]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header6" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[6]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[6]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header7" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[7]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[7]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header8" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[8]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[8]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header9" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[9]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[9]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header10" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[10]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[10]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header11" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[11]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[11]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header12" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[12]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[12]]]></initialValueExpression>
+		</variable>
+		<variable name="V_Header13" class="java.lang.String">
+			<variableExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[13]]]></variableExpression>
+			<initialValueExpression><![CDATA[($F{PERIOD_CONCAT_VALUE}).split("\\|")[13]]]></initialValueExpression>
+		</variable>
+	</subDataset>
+	<queryString language="CSV">
+		<![CDATA[]]>
+	</queryString>
+	<field name="PERIOD_CONCAT_VALUE" class="java.lang.String"/>
+	<field name="NodeDesc" class="java.lang.String"/>
+	<field name="SortOrder" class="java.lang.Double"/>
+	<field name="MakeBold" class="java.lang.String"/>
+	<field name="IndentPos" class="java.lang.Integer"/>
+	<field name="Show_Top_Line" class="java.lang.String"/>
+	<field name="Show_Bottom_Line" class="java.lang.String"/>
+	<field name="Show_Box_Ver_Line" class="java.lang.String"/>
+	<field name="P_Show_MTD" class="java.lang.String"/>
+	<field name="P_Show_QTD" class="java.lang.String"/>
+	<field name="P_Show_YTD" class="java.lang.String"/>
+	<field name="Show_MTD_Per" class="java.lang.String"/>
+	<field name="Show_QTD_Per" class="java.lang.String"/>
+	<field name="P_VAR_THRES" class="java.lang.String"/>
+	<field name="P_AND_OR" class="java.lang.String"/>
+	<field name="P_VAR_PER_THRES" class="java.lang.String"/>
+	<field name="MTD_Amt1" class="java.lang.Double"/>
+	<field name="MTD_Amt2" class="java.lang.Double"/>
+	<field name="MTD_Amt3" class="java.lang.Double"/>
+	<field name="MTD_Amt4" class="java.lang.Double"/>
+	<field name="MTD_Amt5" class="java.lang.Double"/>
+	<field name="MTD_Amt6" class="java.lang.Double"/>
+	<field name="MTD_Amt_Mpy" class="java.lang.Double"/>
+	<field name="QTD_Amt1" class="java.lang.Double"/>
+	<field name="QTD_Amt2" class="java.lang.Double"/>
+	<field name="QTD_Amt3" class="java.lang.Double"/>
+	<field name="QTD_Amt4" class="java.lang.Double"/>
+	<field name="QTD_Amt5" class="java.lang.Double"/>
+	<field name="YTD_AmtPY" class="java.lang.Double"/>
+	<field name="YTD_AmtCY" class="java.lang.Double"/>
+	<field name="Pr_MTD_Dol" class="java.lang.Double"/>
+	<field name="Pr_QTD_Dol" class="java.lang.Double"/>
+	<field name="Same_MTD_Pr_Yr_Dol" class="java.lang.Double"/>
+	<field name="Same_QTD_Pr_Yr_Dol" class="java.lang.Double"/>
+	<field name="Pr_MTD_Per" class="java.lang.Double"/>
+	<field name="Pr_QTD_Per" class="java.lang.Double"/>
+	<field name="Finance_Presentation" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="0" width="2900" height="130" uuid="7b2cce32-9982-4255-badb-72f91df78e3e">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="b7a6f233-8a10-4443-b769-ee9cdc6cda67">
+						<dataSourceExpression><![CDATA[(net.sf.jasperreports.engine.data.JRCsvDataSource)$P{REPORT_DATA_SOURCE}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="2180" uuid="7b18a282-4031-4a01-a34f-cb8c72f17948">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [15]"/>
+						<jr:columnHeader height="20" rowSpan="1"/>
+						<jr:columnGroup width="500" uuid="1278a4e5-ea05-4412-af9a-6b9a7189744b">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [1]"/>
+							<jr:columnHeader height="40" rowSpan="1"/>
+							<jr:column width="500" uuid="26420375-8dd9-4dff-91e4-e0c53b56591c">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+								<jr:columnHeader height="20" rowSpan="1"/>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_NodeDesc" x="0" y="0" width="500" height="20" uuid="c4b8f297-21c3-4b5b-bd31-c94dc72ee873"/>
+										<textFieldExpression><![CDATA["".format("%"+($F{IndentPos}*2-5)+"s", " ")+$F{NodeDesc}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="1680" uuid="080dd232-9fc5-48f0-9dec-b255222dff86">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [14]"/>
+							<jr:columnHeader height="40" rowSpan="1">
+								<textField>
+									<reportElement style="Style_blueBoldGroundColor" x="0" y="0" width="1680" height="40" uuid="1696e2bb-55a7-4c00-9f71-6dc2b29205ac"/>
+									<textFieldExpression><![CDATA["Actuals"]]></textFieldExpression>
+								</textField>
+							</jr:columnHeader>
+							<jr:column width="120" uuid="1b9e6ac9-d56a-4b2c-afe4-1654ef052eef">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="7cb25428-a6b2-41b3-96bc-eb416a93cf78"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header0})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="d32f61dd-99b8-4d93-9f16-ad3810be1716"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":$F{MTD_Amt_Mpy}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="9a7551f1-6020-403a-a6e9-4c4031e6c716">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_QTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Q_GroundColor" x="0" y="0" width="120" height="20" uuid="e157836b-091d-4277-9b0d-cf66c8c96185"/>
+										<textFieldExpression><![CDATA[$V{V_Header1}]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="f82aae4f-9242-4177-9b62-c18b80e50922"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{QTD_Amt5}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="654201b8-afe0-4bf6-97b0-2f926a05ff42">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_YTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Year_GroundColor" x="0" y="0" width="120" height="20" uuid="1d27af02-0fd6-482c-acbc-b9923ba8eeeb"/>
+										<textFieldExpression><![CDATA[$V{V_Header2}.substring(4)+" "+$V{V_Header2}.substring(2,4)]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="1d2bfd77-152c-495c-9e4d-09800aa72fd9"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{YTD_AmtPY}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="f7a6df8b-8820-4b68-8148-2d9f2091593e">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_QTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Q_GroundColor" x="0" y="0" width="120" height="20" uuid="0c02ab82-45b1-49df-bff5-6512dc9bec6a"/>
+										<textFieldExpression><![CDATA[$V{V_Header3}]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="1182274e-887b-44fc-be96-3bd1db631bb8"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{QTD_Amt4}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="88397272-005b-43e6-a1af-f580fcf9be99">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_QTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Q_GroundColor" x="0" y="0" width="120" height="20" uuid="c6d4db64-132f-4a9a-8316-2131bdafe0a0"/>
+										<textFieldExpression><![CDATA[$V{V_Header4}]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="bb8d4fbe-8277-4e33-9787-8882dca4fe67"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{QTD_Amt3}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="32eb3861-21fd-44da-a9dd-af9165f509e1">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="284f2004-7188-44a2-bf2a-7701c9335d02"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header5})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="8e19cc4f-bf18-4750-9328-3b3b6759458c"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt6}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="e3f574e2-aa1f-4ece-8b5d-81b0fcd75004">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="91c3e06b-80c3-4d80-a9f3-3c0d7f7095d2"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header6})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="8f240df7-48e8-43f4-8681-c40ce0693489"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt5}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="19c0c851-5adb-49be-8317-45c683a7bab3">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="f3483552-f7ef-46b3-a65a-6611af70a424"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header7})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="2598f8e6-6da7-4c80-a772-c79aa10d2fe5"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt4}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="f4bd5d0b-1a43-48ca-acda-232de46daf5b">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_QTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Q_GroundColor" x="0" y="0" width="120" height="20" uuid="390b179f-d7d3-4772-a089-7630e8a1f0b1"/>
+										<textFieldExpression><![CDATA[$V{V_Header8}]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="c1617f26-01e0-4c1e-a58c-ecd7fa16fd6d"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{QTD_Amt2}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="56774b85-575d-47c3-8ce4-d63eab2244c4">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="c2066e48-133e-4ce3-bef6-d24ff7a1810b"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header9})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="c6ef4f4e-4710-46f2-a2e3-bd2799fd24f5"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt3}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="d5a290ad-1b02-4745-b7c2-6d1120f4decd">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="b3ed2ad3-010a-4564-a0dd-c5e52e197384"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header10})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="3628d66e-afee-401f-9196-d68d4968422b"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt2}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="b07f9288-060f-4d01-ad21-e166ae55bed0">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_MTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_blueGroundColor" x="0" y="0" width="120" height="20" uuid="c3c11beb-9510-41e0-a762-fecc9629c6a4"/>
+										<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Header11})).replace("-", " ")]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" backcolor="#9ED3A4" uuid="d500e5e1-8418-42c6-af6a-86e0a5505b04"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{MTD_Amt1}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="3ee1445c-1f8f-4ba5-9abc-d8cfdde1ecf2">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_QTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<textField>
+										<reportElement style="Style_Q_GroundColor" x="0" y="0" width="120" height="20" uuid="d6e5c8e0-1640-4aaa-80ca-edb48c5ecf3a"/>
+										<textFieldExpression><![CDATA[$V{V_Header12}]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="bdcaf83c-f855-4ff4-8dc5-3483fc8ece11"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{QTD_Amt1}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="616109d0-fdb2-4490-9940-ebba87156da8">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{P_Show_YTD})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									<textField>
+										<reportElement style="Style_Year_GroundColor" x="0" y="0" width="120" height="20" uuid="6f353f15-19e5-422f-878d-cf74879c0a6f"/>
+										<textFieldExpression><![CDATA[$V{V_Header13}.substring(4)+" "+$V{V_Header13}.substring(2,4)]]></textFieldExpression>
+									</textField>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="6f0d3e2c-cc9b-4606-801b-3e3e8c973fbf"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+$F{YTD_AmtCY}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:columnGroup width="720" uuid="067ebb56-f77b-4a37-ba63-583fa6e3a19a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [6]"/>
+						<jr:columnHeader height="20" rowSpan="1">
+							<textField>
+								<reportElement style="Style_greyBoldGroundColor" x="0" y="0" width="720" height="20" uuid="db68ad16-bc8a-469e-938b-7fec3c565ba5"/>
+								<textFieldExpression><![CDATA["I/(D)"]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnGroup width="240" uuid="7d2003f7-e706-4cd2-ad11-47747631c505">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+							<jr:columnHeader height="40" rowSpan="1">
+								<textField>
+									<reportElement style="Style_greyBoldGroundColor" x="0" y="0" width="240" height="40" uuid="5183d16a-8e8d-4143-b26d-06140ac6834d"/>
+									<textFieldExpression><![CDATA["FP: Actuals Ex FX".equals($F{Finance_Presentation})?"Pr Mth Ex Fx":"Pr Mth"]]></textFieldExpression>
+								</textField>
+							</jr:columnHeader>
+							<jr:column width="120" uuid="f2a936da-d759-4c90-bf87-c81158e22458">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="940908df-3cf3-4ccc-b688-63ff86f998d0"/>
+										<text><![CDATA[$]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="f3e57b1e-91ff-405e-ae31-7976d9ae925f"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+("FP: Actuals Ex FX".equals($F{Finance_Presentation})?$F{Pr_MTD_Dol}:$F{MTD_Amt1}-$F{MTD_Amt2})]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="091a0e14-e87b-4696-b80a-9aa5a7d887dd">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{Show_MTD_Per})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="afe176b6-b85f-4cbd-864b-5ea027fff674"/>
+										<text><![CDATA[%]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField pattern="#,##0%;(#,##0)%">
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="cb920363-6625-45f1-8f0e-8daf49eeaeed"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+(
+    "FP: Actuals Ex FX".equals($F{Finance_Presentation})?
+    $F{Pr_MTD_Per}:
+    (
+        $F{MTD_Amt1}==null||"".equals($F{MTD_Amt1})||$F{MTD_Amt1}==0
+        ?"-":
+        ($F{MTD_Amt1}-$F{MTD_Amt2})/$F{QTD_Amt1} 
+    )
+)]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="240" uuid="fab19e73-7ae2-44d8-8b64-7180f80282a2">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+							<jr:columnHeader height="40" rowSpan="1">
+								<textField>
+									<reportElement style="Style_greyBoldGroundColor" x="0" y="0" width="240" height="40" uuid="f480492b-4dc4-4b34-bff6-46efa497596b"/>
+									<textFieldExpression><![CDATA["FP: Actuals Ex FX".equals($F{Finance_Presentation})?"Pr Qtr Ex Fx":"Pr Qtr"]]></textFieldExpression>
+								</textField>
+							</jr:columnHeader>
+							<jr:column width="120" uuid="c42974ff-9bab-42a2-a262-7459e38e40d9">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="71461f21-4097-43d8-8647-3df2da59489a"/>
+										<text><![CDATA[$]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="572d6f55-319a-4d5e-b1fe-d4dfee19bec0"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+("FP: Actuals Ex FX".equals($F{Finance_Presentation})?$F{Pr_QTD_Dol}:$F{QTD_Amt1}-$F{QTD_Amt2})]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:column width="120" uuid="238f11a2-bfa7-4c7a-b608-4777ab2aad36">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+								<printWhenExpression><![CDATA["Yes".equals($F{Show_QTD_Per})]]></printWhenExpression>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="5427b5b5-f7b3-4cfa-aba1-bf6a9d444d0f"/>
+										<text><![CDATA[%]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField pattern="#,##0%;(#,##0)%">
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="b8395c79-3065-4c5c-be39-6313d35ee38b"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+(
+    "FP: Actuals Ex FX".equals($F{Finance_Presentation})?
+    $F{Pr_QTD_Per}:
+    (
+        $F{QTD_Amt1}==null||"".equals($F{QTD_Amt1})||$F{QTD_Amt1}==0
+        ?"-":
+        ($F{QTD_Amt1}-$F{QTD_Amt2})/$F{QTD_Amt1} 
+    )
+)]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="120" uuid="1e2c515e-3a45-4c6b-bd1c-1dc5e5cd8c93">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [1]"/>
+							<jr:columnHeader height="40" rowSpan="1">
+								<textField>
+									<reportElement style="Style_greyBoldGroundColor" x="0" y="0" width="120" height="40" uuid="fb3a20d0-eff6-4263-a192-371019f869c2"/>
+									<textFieldExpression><![CDATA["FP: Actuals Ex FX".equals($F{Finance_Presentation})?"Same Mth Pr Yr Ex Fx":"Same Mth Pr Yr"]]></textFieldExpression>
+								</textField>
+							</jr:columnHeader>
+							<jr:column width="120" uuid="1a5f65b6-8f6a-4f1a-97ac-7d1dcfda7d06">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="0c55f2da-a751-4cb9-a225-ddcbee9e9369"/>
+										<text><![CDATA[$]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="e1605647-966f-4713-b1c2-77b041f06e88"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+("FP: Actuals Ex FX".equals($F{Finance_Presentation})?$F{Same_MTD_Pr_Yr_Dol}:$F{MTD_Amt1}-$F{MTD_Amt_Mpy})]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+						<jr:columnGroup width="120" uuid="b43af3a1-7f68-40f2-a474-16f24d8c62fe">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [1]"/>
+							<jr:columnHeader height="40" rowSpan="1">
+								<textField>
+									<reportElement style="Style_greyBoldGroundColor" x="0" y="0" width="120" height="40" uuid="0e4fe3d6-5c99-4cd3-8d28-d4c8f7f1339d"/>
+									<textFieldExpression><![CDATA["FP: Actuals Ex FX".equals($F{Finance_Presentation})?"Same Qtr Pr Yr Ex Fx":"Same Qtr Pr Yr"]]></textFieldExpression>
+								</textField>
+							</jr:columnHeader>
+							<jr:column width="120" uuid="ca5d4550-1d32-4c35-9d8f-a5df9b1d661b">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+								<jr:columnHeader style="Table_CH" height="20" rowSpan="1">
+									<staticText>
+										<reportElement style="Style_greyGroundColor" x="0" y="0" width="120" height="20" uuid="0566cd79-4742-4d87-9bc1-a282985b10b7"/>
+										<text><![CDATA[$]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell height="20">
+									<textField>
+										<reportElement style="Style_Amount" x="0" y="0" width="120" height="20" uuid="cc3aab5f-db5b-47e7-b749-97d2cb82ec1f"/>
+										<textFieldExpression><![CDATA[$F{NodeDesc}==null||"".equals($F{NodeDesc})?"":
+("FP: Actuals Ex FX".equals($F{Finance_Presentation})?$F{Same_QTD_Pr_Yr_Dol}:$F{QTD_Amt1}-$F{QTD_Amt5})]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

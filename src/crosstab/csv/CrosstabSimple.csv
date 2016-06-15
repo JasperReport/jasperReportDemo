@@ -1,0 +1,117 @@
+NodeDesc,SortOrder,MakeBold,LevelNum,ShowBox,Show_Vertical_Line,Show_Bottom_Line,Show_Top_Line,Scenario_Tag,Cp_OUTLOOK_PLAN_Amount
+,0,N,1,N,Y,N,N,OUTLOOK,
+100002 - Indirect Assets (L1),1,Y,1,N,Y,N,N,OUTLOOK,495680070290.02
+110001 - Cash and Due from Banks (L2),2,Y,5,N,Y,N,N,OUTLOOK,67789869436.33
+115001 - Deposits with Banks (L2),3,Y,5,N,Y,N,N,OUTLOOK,1091326217380.33
+120001 - Federal Funds Sold and Resales (L2),4,Y,5,N,Y,N,N,OUTLOOK,631514144332.92
+125001 - Brokerage Receivables (L2),5,Y,5,N,Y,N,N,OUTLOOK,92521213248.29
+130001 - Trading Account Assets (L2),6,Y,5,N,Y,N,N,OUTLOOK,668685680483.14
+135000 - Investments - Available-for-Sale (AFS) (L3),7,N,10,N,Y,N,N,OUTLOOK,201681465738.09
+135010 - Investments - Non-Marketable Securities (L3),8,N,10,N,Y,N,N,OUTLOOK,3194897925.92
+135020 - Investments - Held-to-Maturity (HTM) (L3),9,N,10,N,Y,N,N,OUTLOOK,15881536481.74
+135001 - Investments (L2),10,Y,5,N,Y,N,N,OUTLOOK,220757900145.74
+140000 - Consumer Loans & Leases Net of Unearned (L3),11,N,10,N,Y,N,N,OUTLOOK,13386424728.18
+141000 - Commercial Loans & Leases Net of Unearned (L3),12,N,10,N,Y,N,N,OUTLOOK,645689891696.64
+142000 - Cross Regional Loans - Interest Earning (L3),13,N,10,N,Y,N,N,OUTLOOK,-2574659579.65
+160020 - Cross Regional Loans - Non-Interest Earning (L3),14,N,10,N,Y,N,N,OUTLOOK,1526544069.18
+140001 - Total Loans & Leases Net of Unearned (L2),15,Y,5,N,Y,N,N,OUTLOOK,658028200914.36
+145001 - Allowance for Loan Losses (L2),16,Y,5,N,Y,N,N,OUTLOOK,-4807586240.10
+150001 - Goodwill (L2),17,Y,5,N,Y,N,N,OUTLOOK,19894717919.74
+155001 - Intangible Assets (L2),18,Y,5,N,Y,N,N,OUTLOOK,699536919.07
+156001 - Mortgage Servicing Rights (L2),19,Y,5,N,Y,N,N,OUTLOOK,201473462.28
+160040 - Property Plant and Equipment Net (L3),20,N,10,N,Y,N,N,OUTLOOK,2778548675.23
+160030 - Interest & Fees Receivable from Loans (L3),21,N,10,N,Y,N,N,OUTLOOK,4763593018.66
+160010 - Other Assets (L3),22,N,10,N,Y,N,N,OUTLOOK,421259820569.22
+160001 - Other Assets (L2),23,Y,5,N,Y,N,N,OUTLOOK,428801962263.11
+100001 - Direct Assets (L1),24,Y,1,N,Y,N,N,OUTLOOK,3875413330265.20
+100000 - Assets,25,Y,1,N,Y,N,N,OUTLOOK,4371093400555.22
+,26,N,1,N,Y,N,N,OUTLOOK,
+210001 - Deposits (L2),27,Y,5,N,Y,N,N,OUTLOOK,2117818609782.93
+240001 - Trading Account Liabilities (L2),28,Y,5,N,Y,N,N,OUTLOOK,187401980761.93
+250001 - Purchased Funds & Other Borrowings (L2),29,Y,5,N,Y,N,N,OUTLOOK,479183253072.22
+260001 - Long-Term Debt (L2),30,Y,5,N,Y,N,N,OUTLOOK,142055804704.10
+270000 - Other Liabilities (L3),31,N,10,N,Y,N,N,OUTLOOK,11999220008.71
+265000 - Accrued Taxes & Other Expenses (L3),32,N,10,N,Y,N,N,OUTLOOK,17661082806.94
+270001 - Other Liabilities (L2),33,Y,5,N,Y,N,N,OUTLOOK,29660302815.65
+280001 - Net Intersegment Funding - Items in Transit (IIT) (L2),34,Y,5,N,Y,N,N,OUTLOOK,-49630080122.36
+200001 - Liabilities (L1),35,Y,1,N,Y,N,N,OUTLOOK,2906489871014.47
+,36,N,1,N,Y,N,N,OUTLOOK,
+311001 - Preferred Stock (L3),37,N,10,N,Y,N,N,OUTLOOK,2637690105.72
+320000 - Common Stock (L3),38,N,10,N,Y,N,N,OUTLOOK,25027086186.12
+331001 - Additional Paid-In Capital (APIC) (L3),39,N,10,N,Y,N,N,OUTLOOK,178453419694.82
+340000 - Retained Earnings (L3),40,N,10,N,Y,N,N,OUTLOOK,104066517849.92
+350000 - Treasury Stock (L3),41,N,10,N,Y,N,N,OUTLOOK,
+360001 - Accumulated Other Comprehensive Income/Loss (L3),42,N,10,N,Y,N,N,OUTLOOK,-13122619226.66
+310001 - group's Stockholders Equity (L2),43,Y,5,N,Y,N,N,OUTLOOK,297062094609.93
+380001 - Non-Controlling Interest (L2),44,Y,5,N,Y,N,N,OUTLOOK,786825233.50
+300001 - Total Equity (L1),45,Y,1,N,Y,N,N,OUTLOOK,297848919843.42
+,46,N,1,N,Y,N,N,OUTLOOK,
+370001 - Management Capital (L1),47,Y,5,N,Y,N,N,OUTLOOK,
+200000 - Total Liabilities & Equity,48,Y,1,N,Y,N,N,OUTLOOK,3204338790857.90
+,49,N,1,Y,N,N,N,OUTLOOK,
+Average Loans,50,N,1,N,Y,N,Y,OUTLOOK,658028200914.36
+Average Deposits,50.1,N,1,N,Y,Y,N,OUTLOOK,2117818609782.93
+940184 - Total 90+ Days Past Due (90+ DPD) (L2),51,N,10,N,Y,N,N,OUTLOOK,43044920.88
+940200 - Total 30-89 Days Past Due (30-89 DPD) (L2),52,N,10,N,Y,N,N,OUTLOOK,132041460.22
+940210 - Total Past Due Loans (L1),53,Y,5,N,Y,N,N,OUTLOOK,175086381.10
+720000 - Servicing Assets Securitized (L1),54,Y,5,N,Y,N,N,OUTLOOK,
+739000 - Commitments and Contingencies Accounts,55,Y,5,N,Y,N,N,OUTLOOK,595545174364.11
+760000 - Assets Under Management (L1),56,Y,5,N,Y,Y,N,OUTLOOK,278972329198.88
+,0,N,1,N,Y,N,N,PLAN,
+100002 - Indirect Assets (L1),1,Y,1,N,Y,N,N,PLAN,488686360716.83
+110001 - Cash and Due from Banks (L2),2,Y,5,N,Y,N,N,PLAN,78707470927.29
+115001 - Deposits with Banks (L2),3,Y,5,N,Y,N,N,PLAN,1576979821832.39
+120001 - Federal Funds Sold and Resales (L2),4,Y,5,N,Y,N,N,PLAN,686249530110.27
+125001 - Brokerage Receivables (L2),5,Y,5,N,Y,N,N,PLAN,88884113292.11
+130001 - Trading Account Assets (L2),6,Y,5,N,Y,N,N,PLAN,765202212951.13
+135000 - Investments - Available-for-Sale (AFS) (L3),7,N,10,N,Y,N,N,PLAN,166187904255.08
+135010 - Investments - Non-Marketable Securities (L3),8,N,10,N,Y,N,N,PLAN,3436371315.61
+135020 - Investments - Held-to-Maturity (HTM) (L3),9,N,10,N,Y,N,N,PLAN,16957462150.48
+135001 - Investments (L2),10,Y,5,N,Y,N,N,PLAN,186581737721.17
+140000 - Consumer Loans & Leases Net of Unearned (L3),11,N,10,N,Y,N,N,PLAN,38756081538.73
+141000 - Commercial Loans & Leases Net of Unearned (L3),12,N,10,N,Y,N,N,PLAN,579013425254.38
+142000 - Cross Regional Loans - Interest Earning (L3),13,N,10,N,Y,N,N,PLAN,
+160020 - Cross Regional Loans - Non-Interest Earning (L3),14,N,10,N,Y,N,N,PLAN,
+140001 - Total Loans & Leases Net of Unearned (L2),15,Y,5,N,Y,N,N,PLAN,617769506793.11
+145001 - Allowance for Loan Losses (L2),16,Y,5,N,Y,N,N,PLAN,-4500612373.53
+150001 - Goodwill (L2),17,Y,5,N,Y,N,N,PLAN,21663954532.97
+155001 - Intangible Assets (L2),18,Y,5,N,Y,N,N,PLAN,825211924.04
+156001 - Mortgage Servicing Rights (L2),19,Y,5,N,Y,N,N,PLAN,199807099.67
+160040 - Property Plant and Equipment Net (L3),20,N,10,N,Y,N,N,PLAN,2254800473.86
+160030 - Interest & Fees Receivable from Loans (L3),21,N,10,N,Y,N,N,PLAN,4576932428.38
+160010 - Other Assets (L3),22,N,10,N,Y,N,N,PLAN,382715969296.77
+160001 - Other Assets (L2),23,Y,5,N,Y,N,N,PLAN,389547702199.01
+100001 - Direct Assets (L1),24,Y,1,N,Y,N,N,PLAN,4408110457009.65
+100000 - Assets,25,Y,1,N,Y,N,N,PLAN,4896796817726.48
+,26,N,1,N,Y,N,N,PLAN,
+210001 - Deposits (L2),27,Y,5,N,Y,N,N,PLAN,2173405117529.57
+240001 - Trading Account Liabilities (L2),28,Y,5,N,Y,N,N,PLAN,204477804333.62
+250001 - Purchased Funds & Other Borrowings (L2),29,Y,5,N,Y,N,N,PLAN,746786820262.39
+260001 - Long-Term Debt (L2),30,Y,5,N,Y,N,N,PLAN,126642052257.76
+270000 - Other Liabilities (L3),31,N,10,N,Y,N,N,PLAN,18813505719.81
+265000 - Accrued Taxes & Other Expenses (L3),32,N,10,N,Y,N,N,PLAN,19299402287.53
+270001 - Other Liabilities (L2),33,Y,5,N,Y,N,N,PLAN,38112908007.34
+280001 - Net Intersegment Funding - Items in Transit (IIT) (L2),34,Y,5,N,Y,N,N,PLAN,4979109282.59
+200001 - Liabilities (L1),35,Y,1,N,Y,N,N,PLAN,3294403811673.27
+,36,N,1,N,Y,N,N,PLAN,
+311001 - Preferred Stock (L3),37,N,10,N,Y,N,N,PLAN,2501059202.49
+320000 - Common Stock (L3),38,N,10,N,Y,N,N,PLAN,25443762452.29
+331001 - Additional Paid-In Capital (APIC) (L3),39,N,10,N,Y,N,N,PLAN,161886946341.21
+340000 - Retained Earnings (L3),40,N,10,N,Y,N,N,PLAN,-97540415655.69
+350000 - Treasury Stock (L3),41,N,10,N,Y,N,N,PLAN,-1211058.21
+360001 - Accumulated Other Comprehensive Income/Loss (L3),42,N,10,N,Y,N,N,PLAN,-966784385.16
+310001 - group's Stockholders Equity (L2),43,Y,5,N,Y,N,N,PLAN,91323356896.93
+380001 - Non-Controlling Interest (L2),44,Y,5,N,Y,N,N,PLAN,1103497618.03
+300001 - Total Equity (L1),45,Y,1,N,Y,N,N,PLAN,92426854514.95
+,46,N,1,N,Y,N,N,PLAN,
+370001 - Management Capital (L1),47,Y,5,N,Y,N,N,PLAN,
+200000 - Total Liabilities & Equity,48,Y,1,N,Y,N,N,PLAN,3386830666188.22
+,49,N,1,Y,N,N,N,PLAN,
+Average Loans,50,N,1,N,Y,N,Y,PLAN,617769506793.11
+Average Deposits,50.1,N,1,N,Y,Y,N,PLAN,2173405117529.57
+940184 - Total 90+ Days Past Due (90+ DPD) (L2),51,N,10,N,Y,N,N,PLAN,
+940200 - Total 30-89 Days Past Due (30-89 DPD) (L2),52,N,10,N,Y,N,N,PLAN,
+940210 - Total Past Due Loans (L1),53,Y,5,N,Y,N,N,PLAN,
+720000 - Servicing Assets Securitized (L1),54,Y,5,N,Y,N,N,PLAN,
+739000 - Commitments and Contingencies Accounts,55,Y,5,N,Y,N,N,PLAN,603963787397.71
+760000 - Assets Under Management (L1),56,Y,5,N,Y,Y,N,PLAN,258440433352.50

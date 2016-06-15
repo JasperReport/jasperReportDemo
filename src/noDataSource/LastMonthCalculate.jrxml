@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 5.5.1  -->
+<!-- 2016-06-07T14:07:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ab033edf-e986-4da4-b7e5-cd4b884f6c06">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<variable name="V_Year" class="java.lang.Integer">
+		<variableExpression><![CDATA[Calendar.getInstance().get(Calendar.YEAR)]]></variableExpression>
+	</variable>
+	<variable name="V_Month" class="java.lang.Integer">
+		<variableExpression><![CDATA[Calendar.getInstance().get(Calendar.MONTH)]]></variableExpression>
+	</variable>
+	<variable name="V_LastMonth" class="java.lang.String">
+		<variableExpression><![CDATA[$V{V_Month}==0?
+		new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Year}-1+"-"+"12")).replace("-", " ")
+:
+new java.text.SimpleDateFormat("MMM-yy").format(new java.text.SimpleDateFormat("yyyy-MM").parse($V{V_Year}+"-"+$V{V_Month})).replace("-", " ")]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="131" splitType="Stretch">
+			<textField pattern="MMM, yyyy">
+				<reportElement x="0" y="0" width="217" height="58" uuid="adce7dec-dfc6-4ad0-94ef-0c65abf8c1d3"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{V_LastMonth}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-05-26T15:30:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="twoHeader" language="groovy" pageWidth="8000" pageHeight="1400" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="39379566-8e5b-4550-a839-803cbbc3711f">
+	<property name="net.sf.jasperreports.export.xls.collapse.row.span" value="true"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CSAR0006_data_126000AddHeader"/>
+	<style name="showBoxStyle">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{Show_Top_Line1}.trim().equals("Y")]]></conditionExpression>
+			<style>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{Show_Bottom_Line1}.trim().equals("Y")]]></conditionExpression>
+			<style>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{Show_Vertical_Line1}.trim().equals("Y")]]></conditionExpression>
+			<style>
+				<box>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</style>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{NdDesc1}.equals("Total")||$V{NdDesc1}.equals("Discontinued Ops [L2]")|| $V{NdDesc1}.equals("Total Citi [L1]")]]></conditionExpression>
+			<style backcolor="#D9D9D9"/>
+		</conditionalStyle>
+	</style>
+	<style name="boldStyle" fontName="Arial" fontSize="11">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{MakeBold1}.trim().equals("Y")]]></conditionExpression>
+			<style isBold="true"/>
+		</conditionalStyle>
+	</style>
+	<style name="gapStyle">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{Show_Vertical_Line1}.trim().equals("Y")]]></conditionExpression>
+			<style>
+				<box>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</style>
+		</conditionalStyle>
+	</style>
+	<style name="header1Style">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[!"".equals($V{ND_Header1})&&$V{ND_Header1}!=null]]></conditionExpression>
+			<style forecolor="#FFFFFF" backcolor="#002D72"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="CSV">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Fiscal_Year" class="java.lang.String"/>
+	<field name="Accounting_Period" class="java.lang.String"/>
+	<field name="SortOrder" class="java.lang.Double"/>
+	<field name="MakeBold" class="java.lang.String"/>
+	<field name="LevelNum" class="java.lang.Double"/>
+	<field name="nodedesc" class="java.lang.String"/>
+	<field name="HSortOrder" class="java.lang.Double"/>
+	<field name="NdId" class="java.lang.String"/>
+	<field name="NdDesc" class="java.lang.String"/>
+	<field name="BaseAmount" class="java.lang.Double"/>
+	<field name="ShowBox" class="java.lang.String"/>
+	<field name="Show_Vertical_Line" class="java.lang.String"/>
+	<field name="Show_Bottom_Line" class="java.lang.String"/>
+	<field name="Show_Top_Line" class="java.lang.String"/>
+	<field name="ND_Header" class="java.lang.String"/>
+	<field name="ND_SortOrder" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="220" splitType="Stretch">
+			<crosstab>
+				<reportElement x="0" y="0" width="8000" height="220" uuid="b8a7d1f2-3926-4d1a-a460-62c90be592c5">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<rowGroup name="SortOrder1" width="0">
+					<bucket class="java.lang.Double">
+						<bucketExpression><![CDATA[$F{SortOrder}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="Show_Top_Line1" width="0">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{Show_Top_Line}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="Show_Bottom_Line1" width="0">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{Show_Bottom_Line}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="Show_Vertical_Line1" width="0">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{Show_Vertical_Line}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="LevelNum1" width="0">
+					<bucket class="java.lang.Integer">
+						<bucketExpression><![CDATA[$F{LevelNum}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="MakeBold1" width="0">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{MakeBold}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle"/>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="nodedesc1" width="560">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{nodedesc}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="showBoxStyle">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<textField>
+								<reportElement style="boldStyle" x="0" y="0" width="560" height="20" uuid="4876575e-1897-4f74-a9dc-f0432e7e507a"/>
+								<textFieldExpression><![CDATA["".format("%"+($V{LevelNum1}*2-5)+"s", " ")+$V{nodedesc1}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="20" forecolor="#FFFFFF" uuid="501b8765-5635-4d0e-910e-ffbee2d59587"/>
+								<text><![CDATA[Total nodedesc1]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="ND_SortOrder1" height="0">
+					<bucket class="java.lang.Double">
+						<bucketExpression><![CDATA[$F{ND_SortOrder}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="showBoxStyle">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="0" uuid="ac93787c-c941-49bd-9663-58e7bc2ba151">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<textFieldExpression><![CDATA[$V{ND_SortOrder1}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents>
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="0" uuid="8bd0f5c4-27f4-46b3-af16-b82e8624c784"/>
+								<text><![CDATA[Total ND_SortOrder]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<columnGroup name="ND_Header1" height="20" totalPosition="End" headerPosition="Stretch">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{ND_Header}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="header1Style">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<textField>
+								<reportElement style="header1Style" mode="Transparent" x="0" y="0" width="125" height="20" uuid="40128111-505b-4e19-b8ae-22600a05a54d"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="Arial" size="11"/>
+									<paragraph leftIndent="5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{ND_Header1}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="20" height="75" forecolor="#FFFFFF" uuid="b5d9ffe4-3f18-4919-89b9-3ddaa5a98a29"/>
+								<text><![CDATA[Total ND_Header1]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<columnGroup name="HSortOrder1" height="0">
+					<bucket class="java.lang.Double">
+						<bucketExpression><![CDATA[$F{HSortOrder}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="showBoxStyle">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="0" uuid="ac93787c-c941-49bd-9663-58e7bc2ba151"/>
+								<textFieldExpression><![CDATA[$V{HSortOrder1}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents>
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="0" uuid="8bd0f5c4-27f4-46b3-af16-b82e8624c784"/>
+								<text><![CDATA[Total HSortOrder]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<columnGroup name="NdDesc1" height="55">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{NdDesc}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="showBoxStyle">
+							<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+							<textField>
+								<reportElement mode="Opaque" x="0" y="0" width="125" height="55" forecolor="#FFFFFF" backcolor="#002D72" uuid="da709059-b2cb-413b-bca4-798980fa5057"/>
+								<box>
+									<topPen lineWidth="0.5" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineColor="#000000"/>
+									<bottomPen lineWidth="0.5" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{NdDesc1}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque"/>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="BaseAmount_MEASURE1" class="java.lang.Double" calculation="Sum">
+					<measureExpression><![CDATA[$F{BaseAmount}]]></measureExpression>
+				</measure>
+				<crosstabCell width="125" height="20">
+					<cellContents mode="Opaque" style="showBoxStyle">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+						<textField pattern="#,##0;(#,##0)">
+							<reportElement style="boldStyle" mode="Transparent" x="0" y="0" width="125" height="20" uuid="f3a99af7-66da-4a37-bddc-a27b5afee43b">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<paragraph rightIndent="4"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$V{nodedesc1}==null||"".equals($V{nodedesc1})?"":$V{BaseAmount_MEASURE1}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="20" height="20" columnTotalGroup="ND_Header1">
+					<cellContents mode="Opaque">
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<textField>
+							<reportElement style="gapStyle" mode="Transparent" x="0" y="0" width="20" height="20" forecolor="#FFFFFF" uuid="ff171aac-92be-462c-8499-271e2e0fe3bf">
+								<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							</reportElement>
+							<textFieldExpression><![CDATA[$V{BaseAmount_MEASURE1}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="nodedesc1">
+					<cellContents mode="Opaque"/>
+				</crosstabCell>
+				<crosstabCell width="0" height="20" columnTotalGroup="ND_SortOrder1">
+					<cellContents mode="Opaque"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="0" rowTotalGroup="SortOrder1">
+					<cellContents mode="Opaque"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="0" rowTotalGroup="LevelNum1">
+					<cellContents mode="Opaque"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="0" rowTotalGroup="MakeBold1">
+					<cellContents mode="Opaque"/>
+				</crosstabCell>
+			</crosstab>
+		</band>
+	</summary>
+</jasperReport>
